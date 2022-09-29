@@ -90,9 +90,9 @@
 }
 
 .ex-12-button:hover .ex-12-top-white{
-    animation: bianco 2s linear;
+    animation: biancosopra 2s linear;
 }
-@keyframes bianco {
+@keyframes biancosopra {
     0%{
         left: 5%;
         top:-10px;
@@ -114,7 +114,37 @@
         top: -15px;
     }
     100% {
-        left: 15%;
-        top: -5px;
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: biancosotto 2s linear;
+}
+@keyframes biancosotto {
+    0% {
+        bottom: -5px;
+        right: 15%;
+    }
+    30% {
+        right: calc(100% - 20px);
+        bottom: -15px;
+    }
+    45% {
+        right: calc(100% - 15px);
+        bottom: 100%;
+    }
+    75% {
+        right: 15px;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -5px;
+        right: 15%;
     }
 }
